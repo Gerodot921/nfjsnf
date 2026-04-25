@@ -1,0 +1,28 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/webapp/index.html"
+    },
+    {
+      "source": "/app.js",
+      "destination": "/webapp/app.js"
+    },
+    {
+      "source": "/styles.css",
+      "destination": "/webapp/styles.css"
+    },
+    {
+      "source": "/api/:path*",
+      "destination": "http://151.243.176.102:8081/api/:path*"
+    },
+    {
+      "source": "/healthz",
+      "destination": "http://151.243.176.102:8081/healthz"
+    },
+    {
+      "source": "/:path*",
+      "destination": "/webapp/:path*"
+    }
+  ]
+}
